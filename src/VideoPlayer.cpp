@@ -140,7 +140,8 @@ namespace videoplayer {
         engine->m_system->createStream(nullptr, FMOD_OPENUSER, &soundInfo, &m_sound);
 
         FMOD::ChannelGroup* group;
-        engine->m_globalChannel->getChannelGroup(&group);
+
+        FMODAudioEngine::sharedEngine()->m_system->getMasterChannelGroup(&group);
 
         engine->m_system->playSound(m_sound, group, false, &m_channel);
         m_channel->setVolume(m_volume);
