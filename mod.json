@@ -1,0 +1,18 @@
+{
+	"geode": "2.0.0-beta.24",
+	"gd": {
+		"win": "2.204",
+		"mac": "2.200"
+	},
+	"version": "v1.0.1",
+	"id": "fig.video_player",
+	"name": "Video Player",
+	"developers": ["fig", "Alphalaneous"],
+	"description": "Provides an API for playing mpeg (.mpg) videos",
+	"api": {
+		"include": [
+			"include/*.hpp",
+			"pl_mpeg/pl_mpeg.h"
+		]
+	}
+}
