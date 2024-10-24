@@ -28,10 +28,8 @@ jobs:
         uses: geode-sdk/build-geode-mod@main
         
         with:
-          sdk: latest
           combine: true
           target: ${{ matrix.config.target }}
-          bindings: Alphalaneous/bindings
       
   package:
     name: Package builds
